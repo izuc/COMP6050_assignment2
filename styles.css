@@ -1,0 +1,372 @@
+body {
+	margin-left: 1cm;
+	background-color: #000;
+	text-align: center;
+	background-image: url(images/background-repeat.png);
+	background-repeat: repeat-x;
+	background-color: #9264df;
+	font-family: Arial;
+}
+
+#body_container {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#header_container {
+	width: 100%;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	overflow: hidden;
+}
+
+#banner {
+	width: 800px;
+	height: 150px;
+	float: left;
+	background-image: url(images/banner.png);
+	background-repeat: no-repeat;
+	text-align: right;
+}
+
+#banner h1 {
+	margin-top: 40px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+#navigation {
+	height: 50px;
+	float: left;
+	margin-left: 80px;
+	margin-top: 5px;
+}
+
+#navigation a {
+	display: block;
+	width: 200px;
+	height: 35px;
+	background-color: #00FF00;
+	float: left;
+	text-decoration: none;
+	border: 1px solid #000;
+	font-size: 18px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 5px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+#navigation a:hover {
+	background-color: #FF0000;
+	font-size: 20pt;
+}
+
+#navigation a:visited {
+	background-color: #0000FF;
+	color: #FFF;
+}
+
+#navigation a:active {
+	background-color: #FF0000;
+}
+
+#content_container {
+	width: 800px;
+	background-color: #3c5daa;
+	border: 3px solid #000;
+	margin-top: 10px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	overflow: hidden;
+}
+
+#content_text {
+	margin: 10px;
+	overflow: hidden;
+}
+
+#world_map {
+	overflow: hidden;
+}
+
+
+#data_collection_form fieldset {
+	background-color: #FFF;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 2px solid #000;
+	padding: 20px;
+	text-align: left;
+}
+
+#data_collection_form label {
+	width: 200px;
+	float: left;
+}
+
+
+#data_collection_form input[type="text"] {
+	padding: 5px;
+}
+
+#data_collection_form input {
+	float: left;
+	padding: 0px;
+}
+
+#data_collection_form .field_option {
+	float: left;
+}
+
+#data_collection_form .field_row {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#data_collection_form .button {
+	background-color: #0000FF;
+	border: 1px solid #000;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 25px;
+	color: #FFF;
+	font-size: 18pt;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+#data_collection_form .button:hover {
+	background-color: #FF0000;
+}
+
+.fanfic_list {
+	list-style-type: lower-roman;
+}
+
+.fanfic {
+	background-color: #FFF;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border: 1px solid #000;
+	margin-bottom: 10px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.link_row img {
+	margin-right: 10px;
+	float: left;
+	border-radius: 10px;
+	border: 5px solid #000;
+}
+
+.link_row a {
+	display: block;
+	float: left;
+}
+
+.link_row {
+	width: 100%;
+	float: left;
+	padding: 10px;
+}
+
+.fanfic_link  {
+	font-size: 12pt;
+	text-decoration: underline;
+	color: #FFF;
+}
+
+.description ul {
+	margin: 10px;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.main_information {
+	margin: 10px 0 10px 10px;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.main_information li {
+	border: 1px solid #000;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+
+ul.main_information li strong {
+	margin-right: 10px;
+	text-decoration: underline;
+}
+
+#fanfic_links {
+	width: 100%;
+	height: 40px;
+}
+
+#fanfic_links a  {
+	font-size: 18px;
+	padding-bottom: 19px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FFF;
+	text-decoration: none;
+	margin-right: 10px;
+	height: 40px;
+	border: 1px solid #000;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom: 0px;
+}
+
+#fanfic_links a:active  {
+	color: #000;
+}
+
+#fanfic_links a:visited  {
+	color: #000;
+}
+
+#fanfic_links a:hover  {
+	background-color: #FF0000;
+}
+
+.description {
+	background-color: #FFF;
+	border-radius: 10px;
+	border: 1px solid #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+.welcome {
+	font-size: 14pt;
+}
+
+.abbreviation {
+	font-style: italic;
+}
+
+p {
+	padding: 10px;
+}
+
+h2 {
+	font-size: 20pt;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+.form_error {
+	background-color: #FF0000;
+	color: #FFF;
+	font-weight: bold;
+	padding: 5px;
+	float: right;
+	width: 300px;
+	margin-right: 50px;
+}
+
+.fanfic h2 {
+	color: #000;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.fanfic h3 {
+	color: #000;
+	margin: 0;
+}
+
+label {
+	font-style: italic;
+}
+
+.information {
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.information_image {
+	float: left;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.information_main {
+	float: left;
+	width: 558px;
+}
+
+.synopsis {
+	border: 1px solid #000000;
+    margin: 10px;
+	padding: 10px;
+    clear: both;
+}
+
+.characters {
+	border: 1px solid #000000;
+    margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.character {
+	clear: both;
+	overflow: hidden;
+	height: 25px;
+}
+
+.character_image {
+	width: 25px;
+	height: 25px;
+	float: left;
+	overflow: hidden;
+}
+
+.character_name {
+	float: left;
+	overflow: hidden;
+}
+
+.copyright {
+	background-color: #0d3890;
+	border-radius: 10px;
+	border: 1px solid #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: #FFF;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+.links {
+	overflow: hidden;
+	background-color: #0d3890;
+	border-radius: 10px;
+	border: 1px solid #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 10px;
+}
+

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Amathon - Fanfiction - Home</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script type="text/javascript">
+			//<![CDATA[
+			function validation() {
+				var email_address = document.getElementById("email_address").value;
+				var first_name = document.getElementById("first_name").value;
+				var last_name = document.getElementById("last_name").value;
+				if ((email_address.indexOf("@") > 0) && (first_name.length > 0) && (last_name.length > 0)) {
+					return true;
+				} else {
+					if (first_name.length == 0) {
+						document.getElementById("first_name_err").style.display = 'block';
+					} else {
+						document.getElementById("first_name_err").style.display = 'none';
+					}
+					if (last_name.length == 0) {
+						document.getElementById("last_name_err").style.display = 'block';
+					} else {
+						document.getElementById("last_name_err").style.display = 'none';
+					}
+					if (email_address.length == 0) {
+						document.getElementById("email_address_req_err").style.display = 'block';
+					} else {
+						document.getElementById("email_address_req_err").style.display = 'none';
+						if (email_address.indexOf("@") == -1) {
+							document.getElementById("email_address_valid_err").style.display = 'block';
+						} else {
+							document.getElementById("email_address_valid_err").style.display = 'none';
+						}
+					}
+				}
+				return false;
+			}
+			//]]>
+		</script>
+	</head>
+	<body>
+		<div id="body_container">
+			<div id="header_container">
+				<div id="banner"><h1>Data Collection</h1></div>
+				<div id="navigation">
+					<a href="index.html">Home</a>
+					<a href="data_collection.html">Data Collection</a>
+					<a href="fanfics.html">Fanfics</a>
+				</div>
+			</div>
+			<div id="content_container">
+				<div id="content_text">
+					<h2>Data Collection</h2>
+					<form action="data_collection.html" method="post" id="data_collection_form" onsubmit="return validation();">
+						<fieldset>
+						<div class="field_row">
+							<label>First Name:</label>
+							<input type="text" name="first_name" id="first_name" size="20" />
+							<span class="form_error" style="display: none;" id="first_name_err">* First Name Required</span>
+						</div>
+						<div class="field_row">
+							<label>Last Name:</label>
+							<input type="text" name="last_name" id="last_name" size="20" />
+							<span class="form_error" style="display: none;" id="last_name_err">* Last Name Required</span>
+						</div>
+						<div class="field_row">
+							<label>Email Address:</label>
+							<input type="text" name="email_address" id="email_address" size="20" />
+							<span class="form_error" style="display: none;" id="email_address_req_err">* Email Required</span>
+							<span class="form_error" style="display: none;" id="email_address_valid_err">* Not a valid email address</span>
+						</div>
+						<div class="field_row">
+							<label>Previous Stories Count:</label>
+							<input type="text" name="stories_count" size="20" />
+						</div>
+						
+						<div class="field_row">
+							<label>Are you a professional author?</label>
+							<div class="field_option">
+								<input type="radio" name="question" value="1" /> &nbsp; &nbsp;Yes <br />
+								<input type="radio" name="question" value="0" checked="checked" /> &nbsp; &nbsp;No <br />
+							</div>
+						</div>
+						
+						<div class="field_row">
+							<label>Story Title:</label>
+							<div class="field_option">
+								<input type="text" name="story_title" size="20" />
+							</div>
+						</div>
+						
+						<div class="field_row">
+							<label>Story Type:</label>
+							<div class="field_option">
+								<select name="dish_type">
+									<option value="1">Humour</option>
+									<option value="2">Mystery</option>
+									<option value="3">Horror</option>
+									<option value="4">Action</option>
+									<option value="6">Science Fiction</option>
+									<option value="7">Other</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="field_row">
+							<label>Story Description:</label>
+							<div class="field_option">
+								<textarea name="description" cols="50" rows="5"></textarea>
+							</div>
+						</div>
+						
+						<div class="field_row">
+							<label>Written fanfics in any of the following media types:</label>
+							<div class="field_option">
+								<input type="checkbox" name="media[video]" value="1" /> &nbsp; &nbsp;Video <br />
+								<input type="checkbox" name="media[audio]" value="1" /> &nbsp; &nbsp;Audio <br />
+								<input type="checkbox" name="media[graphic_art]" value="1" /> &nbsp; &nbsp;Graphic Art <br />
+							</div>
+						</div>
+						
+						<div class="field_row">
+							<label>Related Website URL:</label>
+							<div class="field_option">
+								<input type="text" name="website_url" size="40" />
+							</div>
+						</div>
+						
+						<input type="submit" class="button" name="Submit" />
+						<input type="reset" class="button" name="Clear" />
+						</fieldset>
+						
+					</form>
+					<p class="copyright">
+						This website was created by Lance Baker  &copy; 2013
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

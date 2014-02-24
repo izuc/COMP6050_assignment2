@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="stories">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+			<head>
+				<title>Fanfic - <xsl:value-of select="category" /></title>
+				<link rel="stylesheet" type="text/css" href="styles.css" />
+			</head>
+			<body>
+				<div id="body_container">
+					<div id="header_container">
+						<div id="banner"><h1><xsl:value-of select="category" /></h1></div>
+						<div id="navigation">
+							<a href="index.html">Home</a>
+							<a href="data_collection.html">Data Collection</a>
+							<a href="fanfics.html">Fanfics</a>
+						</div>
+					</div>
+					<div id="content_container">
+						<div id="content_text">	
+							<div id="fanfic_links">
+								<a href="fanfic_games.xml">Games</a> <a href="fanfic_movies.xml">Movies</a> <a href="fanfic_tv.xml">TV</a>
+							</div>
+							<xsl:for-each select="story">
+								<xsl:sort select="title"/>
+								<div class="fanfic">
+									<h2><xsl:value-of select="title" /></h2>
+									
+									<div class="information_image">
+										<xsl:if test="image/@src">
+											<img src="{image/@src}" width="200px" /> <br />
+										</xsl:if>
+										<xsl:if test="world/image/@src">
+											<img src="{world/image/@src}" width="200px" /> 
+										</xsl:if>
+									</div>
+									
+									<div class="information_main">
+										<ul class="main_information">
+											<li><strong>Length</strong><span><xsl:value-of select="@length" /></span></li>
+											<li><strong>Classification</strong><span><xsl:value-of select="@classification" /></span></li>
+											<li><strong>Author</strong><span><xsl:value-of select="author" /></span></li>
+											<li><strong>Language</strong><span><xsl:value-of select="language" /></span></li>
+											<li><strong>Genre</strong><span><xsl:value-of select="genre" /></span></li>
+											<li><strong>Year</strong><span><xsl:value-of select="year" /></span></li>
+											<xsl:if test="warning">
+												<li><strong>Warning</strong><span><xsl:value-of select="warning" /></span></li>
+											</xsl:if>
+											<li>
+												<strong>Website</strong>
+												<span>
+													<a href="{website/@url}" target="_blank"><xsl:value-of select="website" /></a>
+												</span>
+											</li>
+											<li><strong>World</strong><span><xsl:value-of select="world/description" /></span></li>
+										</ul>
+									</div>
+									<div class="synopsis">
+										<h3>Synopsis</h3>
+										<xsl:value-of select="synopsis" />
+									</div>
+									<xsl:if test="characters">
+										<div class="characters">
+											<h3>Characters</h3>
+											<xsl:for-each select="characters/character">
+												<div class="character">
+													<xsl:if test="image">
+														<div class="character_image">
+															 <img src="{image/@src}" width="25px" height="25px" />
+														</div>
+													</xsl:if>
+													<div class="character_name">
+														<xsl:value-of select="name" />
+													</div>
+												</div>
+											</xsl:for-each>
+										</div>
+									</xsl:if>
+								</div>
+							</xsl:for-each>
+							<p class="copyright">
+								This website was created by Lance Baker <xsl:text disable-output-escaping="yes">©</xsl:text> 2013
+							</p>
+						</div>
+					</div>
+				</div>
+			</body>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>

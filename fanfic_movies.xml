@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fanfic_xslt.xml"?>
+<!DOCTYPE stories[
+	<!ELEMENT stories (category, story+)>
+	<!ELEMENT story (title, author, language, genre, year, warning?, website, image?, world, synopsis, characters?)>
+	<!ATTLIST story length CDATA #REQUIRED>
+	<!ATTLIST story classification CDATA #REQUIRED>
+	<!ELEMENT category (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT language (#PCDATA)>
+	<!ELEMENT genre (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+	<!ELEMENT warning (#PCDATA)>
+	<!ELEMENT website (#PCDATA)>
+	<!ATTLIST website url CDATA #REQUIRED>
+	<!ELEMENT image EMPTY>    
+	<!ATTLIST image src CDATA #REQUIRED>
+	<!ELEMENT world (description, image?)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT synopsis (#PCDATA)>
+	<!ELEMENT characters (character+)>
+	<!ELEMENT character (name, role?, image?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT role (#PCDATA)>
+]>
+
+<stories>
+	<category>Movies</category>
+	<story length="1 issue" classification="M">
+		<title>Aliens: Outbreak</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Horror</genre>
+		<year>2013</year>
+		<warning>
+			Horror/ Violence
+		</warning>
+		<website url="https://digital.darkhorse.com/profile/2718.aliens-1-outbreak/">Comic</website>
+		<image src="xml_images/aliens_outbreak.jpg" />
+		<world>
+			<description>
+				The Alien Universe
+			</description>
+		</world>
+		<synopsis>
+			Wilks was a space marine with a near-fatal flaw: he had a heart. Billie was a child, the only survivor of a far-flung colony outpost. Thrown together in the last hellish night of an Alien invasion, Billie and Wilks helped each other get out alive. Thirteen years later, Wilks is in prison and Billie lives in a mental institution, the nightmare memories of the massacre at Rim seared into her mind. Now the pair get a chance to be reunited. To go back to that outpost where it all happened, to finally end the business between themselves . . . and the Aliens.
+		</synopsis>
+	</story>
+	<story length="1 issue" classification="M">
+		<title>Predator: Concrete Jungle</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Horror</genre>
+		<year>2013</year>
+		<warning>
+			Horror/ Violence
+		</warning>
+		<website url="https://digital.darkhorse.com/profile/2720.predator-1-concrete-jungle/">Comic</website>
+		<image src="xml_images/predator.jpg" />
+		<world>
+			<description>
+				Based on Predator 2
+			</description>
+		</world>
+		<synopsis>
+			New York City's Detective Schaefer has seen it all, from domestic murders to drug-gang executions. But Schaefer's never seen the Big Apple awash in so much blood as tonight, with flayed bodies hung like meat being cured for mealtime. When Schaefer has a close encounter with one of the murderers, he realizes he's run into something much bigger than the police suspect. Can even the toughest cop stand up to the ultimate hunter?
+		</synopsis>
+	</story>
+	<story length="8 issues" classification="M">
+		<title>Star Wars: The Old Republic</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Action/ Adventure</genre>
+		<year>2011</year>
+		<website url="https://digital.darkhorse.com/browse/volume/182/">Comics</website>
+		<image src="xml_images/starwars.jpg" />
+		<world>
+			<description>
+				Star Wars
+			</description>
+		</world>
+		<synopsis>
+			After hundreds of years, the Sith Empire has returned to the galaxy, determined to crush the Republic that sent them into exile. For young Sith Teneb Kel, this is his only chance to rise above his lowly beginnings as a slave and prove his worth to the Dark Council. Yet their mission for him is unexpected. He will not hunt Jedi, but rather a fellow Sith the Emperor's apprentice!
+		</synopsis>
+	</story>
+</stories>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fanfic_xslt.xml"?>
+<!DOCTYPE stories[
+	<!ELEMENT stories (category, story+)>
+	<!ELEMENT story (title, author, language, genre, year, warning?, website, image?, world, synopsis, characters?)>
+	<!ATTLIST story length CDATA #REQUIRED>
+	<!ATTLIST story classification CDATA #REQUIRED>
+	<!ELEMENT category (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT language (#PCDATA)>
+	<!ELEMENT genre (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+	<!ELEMENT warning (#PCDATA)>
+	<!ELEMENT website (#PCDATA)>
+	<!ATTLIST website url CDATA #REQUIRED>
+	<!ELEMENT image EMPTY>    
+	<!ATTLIST image src CDATA #REQUIRED>
+	<!ELEMENT world (description, image?)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT synopsis (#PCDATA)>
+	<!ELEMENT characters (character+)>
+	<!ELEMENT character (name, role?, image?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT role (#PCDATA)>
+]>
+
+<stories>
+	<category>Games</category>
+	<story length="10 minutes" classification="M">
+		<title>Freeman's Mind</title>
+		<author>Ross Scott</author>
+		<language>English</language>
+		<genre>Parody</genre>
+		<year>2007</year>
+		<website url="http://www.youtube.com/watch?v=7J80KD4BG7M">First Episode</website>
+		<image src="xml_images/freemans_mind.jpg" />
+		<world>
+			<description>
+				The game Half-Life: Source
+			</description>
+		</world>
+		<synopsis>
+			Freeman's Mind is a walk through of Half-Life with added commentary. Ross Scott acts as Gordon Freeman, giving commentary for the events that surround him.
+		</synopsis>
+		<characters>
+			<character>
+				<name>Gordon Freeman</name>
+			</character>
+		</characters>
+	</story>
+	<story length="10 minutes" classification="M">
+		<title>Half-Life: Escape from City 17</title>
+		<author>Purchase Brothers</author>
+		<language>English</language>
+		<genre>Action</genre>
+		<year>2009</year>
+		<warning>Contains violence</warning>
+		<website url="http://www.youtube.com/watch?v=q1UPMEmCqZo">Part one</website>
+		<image src="xml_images/halflife_escapefromcity17.jpg" />
+		<world>
+			<description>
+				Set in City 17
+			</description>
+			<image src="http://images.wikia.com/half-life/en/images/b/bb/HalfLife2_City17_TrainStationSquare.jpg" />
+		</world>
+		<synopsis>
+			Half-Life: Escape from City 17 is a two-part Canadian short film written, developed, and filmed by the Purchase Brothers. The film is set in the Half-Life universe, during the events of Half-Life 2 and Half-Life 2: Episode One. 
+		</synopsis>
+		<characters>
+			<character>
+				<name>Unknown Names - Resistance members</name>
+			</character>
+		</characters>
+	</story>
+	<story length="10 minutes" classification="M">
+		<title>Civil Protection</title>
+		<author>Ross Scott</author>
+		<language>English</language>
+		<genre>Comedy</genre>
+		<year>2008</year>
+		<warning>Contains violence</warning>
+		<website url="http://www.youtube.com/watch?v=c1ey8EnVSiA">First Episode</website>
+		<image src="xml_images/civil_protection.jpg" />
+		<world>
+			<description>
+				The world of Half Life 2.
+			</description>
+		</world>
+		<synopsis>
+			Civil Protection is a comedy showing the lighter side of being in an oppressive and dystopian society. Inspired directly from the game Half-Life 2, the series follows the events of some of the more dysfunctional officers in the Combine police force.
+		</synopsis>
+		<characters>
+			<character>
+				<name>Mike</name>
+			</character>
+			<character>
+				<name>Dave</name>
+			</character>
+		</characters>
+	</story>
+	<story length="1 issue" classification="M">
+		<title>Fallout: New Vegas - All Roads</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Action</genre>
+		<year>2011</year>
+		<warning>Contains violence</warning>
+		<website url="https://digital.darkhorse.com/profile/712/">Comic</website>
+		<image src="xml_images/fallout_newvegas.jpg" />
+		<world>
+			<description>
+				Fallout: New Vegas
+			</description>
+		</world>
+		<synopsis>
+			All Roads introduces the world of New Vegas, a town of dreamers and desperadoes being torn apart by warring factions vying for complete control of this desert oasis, and tells an intriguing tale of loyalty and violence that leads right up to the beginning of the game.
+		</synopsis>
+	</story>
+</stories>

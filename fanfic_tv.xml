@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fanfic_xslt.xml"?>
+<!DOCTYPE stories[
+	<!ELEMENT stories (category, story+)>
+	<!ELEMENT story (title, author, language, genre, year, warning?, website, image?, world, synopsis, characters?)>
+	<!ATTLIST story length CDATA #REQUIRED>
+	<!ATTLIST story classification CDATA #REQUIRED>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT language (#PCDATA)>
+	<!ELEMENT genre (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+	<!ELEMENT warning (#PCDATA)>
+	<!ELEMENT website (#PCDATA)>
+	<!ATTLIST website url CDATA #REQUIRED>
+	<!ELEMENT image EMPTY>    
+	<!ATTLIST image src CDATA #REQUIRED>
+	<!ELEMENT world (description, image?)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT synopsis (#PCDATA)>
+	<!ELEMENT characters (character+)>
+	<!ELEMENT character (name, role?, image?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT role (#PCDATA)>
+]>
+
+<stories>
+	<category>TV</category>
+	<story length="4 issues" classification="M">
+		<title>Those Left Behind</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Drama</genre>
+		<year>2012</year>
+		<website url="https://digital.darkhorse.com/browse/volume/147/">Website</website>
+		<image src="xml_images/those_left_behind.jpg" />
+		<world>
+			<description>
+				Based on the Firefly television program
+			</description>
+		</world>
+		<synopsis>
+			The crew of the ship Serenity once again find themselves broke and on the wrong side of a number of very large firearms, making the first issue a case study in how to mix intense, Whedon-style character interaction with cinematic action and violence. Artist Will Conrad and colorist Laura Martin paint a rough and wild world of adventure across a strange and dangerous universe.
+		</synopsis>
+		<characters>
+			<character>
+				<name>Captain Malcolm 'Mal' Reynolds</name>
+			</character>
+			<character>
+				<name>Zoë Washburne</name>
+			</character>
+			<character>
+				<name>Hoban 'Wash' Washburne</name>
+			</character>
+			<character>
+				<name>Inara Serra</name>
+			</character>
+			<character>
+				<name>Jayne Cobb</name>
+			</character>
+			<character>
+				<name>Kaylee Frye</name>
+			</character>
+			<character>
+				<name>Dr. Simon Tam</name>
+			</character>
+			<character>
+				<name>River Tam</name>
+			</character>
+		</characters>
+	</story>
+	<story length="4 issues" classification="M">
+		<title>Better Days</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Drama</genre>
+		<year>2012</year>
+		<website url="https://digital.darkhorse.com/browse/volume/148/">Website</website>
+		<image src="xml_images/better_days.jpg" />
+		<world>
+			<description>
+				Based on the Firefly television program
+			</description>
+		</world>
+		<synopsis>
+			Better Days revisits everyone's favorite space cowboys in this thrilling, action-packed adventure, with Mal and his crew on a heist that promises a big payoff—what's surprising is that this heist just might make good on that promise.
+		</synopsis>
+		<characters>
+			<character>
+				<name>Captain Malcolm 'Mal' Reynolds</name>
+			</character>
+			<character>
+				<name>Zoë Washburne</name>
+			</character>
+			<character>
+				<name>Hoban 'Wash' Washburne</name>
+			</character>
+			<character>
+				<name>Inara Serra</name>
+			</character>
+			<character>
+				<name>Jayne Cobb</name>
+			</character>
+			<character>
+				<name>Kaylee Frye</name>
+			</character>
+			<character>
+				<name>Dr. Simon Tam</name>
+			</character>
+			<character>
+				<name>River Tam</name>
+			</character>
+		</characters>
+	</story>
+	<story length="4 issues" classification="M">
+		<title>Falling Skies</title>
+		<author>Dark Horse Comics</author>
+		<language>English</language>
+		<genre>Drama</genre>
+		<year>2011</year>
+		<website url="https://digital.darkhorse.com/profile/182.falling-skies-1/">Comic</website>
+		<image src="xml_images/falling_skies.jpg" />
+		<world>
+			<description>
+				Based on the Falling Skies television program
+			</description>
+		</world>
+		<synopsis>
+			In the heart of Boston, following the devastating events of an alien invasion, history professor Tom Mason and his sons Hal, Matt, and Ben are just trying to survive. After an extreme firefight with the aliens, Ben gets kidnapped. Determined to get his son back, Tom joins forces with the Second Mass, a militia group that is taking the fight against the aliens. But with the group’s munitions supplies running low, Tom must locate an old friend to equip himself and his team in order to ensure the survival of the human race!
+		</synopsis>
+		<characters>
+			<character>
+				<name>Tom Mason</name>
+			</character>
+		</characters>
+	</story>
+</stories>
